@@ -1,4 +1,4 @@
-// toggle menu
+// Toggle menu
 function toggleMenu() {
   const nav = document.getElementById("navLinks");
   nav.classList.toggle("show");
@@ -10,7 +10,7 @@ function isInViewport(element) {
   return rect.top <= window.innerHeight && rect.bottom >= 0;
 }
 
-// animation when scroll
+// Animation when scroll
 function handleScrollAnimation() {
   const aboutText = document.getElementById("aboutText");
   const aboutImage = document.getElementById("aboutImage");
@@ -23,11 +23,11 @@ function handleScrollAnimation() {
   }
 }
 
-// Trigger saat scroll
+// Trigger on scroll
 window.addEventListener("scroll", handleScrollAnimation);
 window.addEventListener("load", handleScrollAnimation);
 
-// projects
+// Projects
 function animateCards() {
   const cards = document.querySelectorAll(".project-card");
   cards.forEach((card) => {
@@ -40,7 +40,7 @@ function animateCards() {
 window.addEventListener("scroll", animateCards);
 window.addEventListener("load", animateCards);
 
-// contacts
+// Contacts
 function animateContact() {
   const contactSection = document.querySelector(".contact");
   if (isInViewport(contactSection)) {
