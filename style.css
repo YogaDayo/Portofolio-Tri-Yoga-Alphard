@@ -12,6 +12,7 @@ body {
 }
 
 nav {
+  border: solid black;
   top: 0;
   left: 0;
   right: 0;
@@ -21,8 +22,9 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
-  position: sticky;
+  padding: 1rem 3rem;
+  position: fixed;
+  width: 100%;
 }
 
 .logo {
@@ -86,6 +88,9 @@ nav {
   flex: 1 1 300px;
   text-align: center;
   padding: 1rem;
+  transform: translateY(30px);
+  opacity: 0;
+  animation: slideInImage 1s forwards 0.2s;
 }
 
 .hero-image img {
@@ -288,6 +293,10 @@ nav {
 
 /* Responsive */
 @media (max-width: 768px) {
+  nav {
+    padding: 1rem 1rem;
+    width: 1005s;
+  }
   .nav-links {
     position: absolute;
     top: 100%;
