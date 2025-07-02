@@ -9,6 +9,11 @@ html {
 body {
   font-family: "Segoe UI", sans-serif;
 }
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
 nav {
   border: solid black;
   top: 0;
@@ -53,6 +58,7 @@ nav {
 }
 /* Hero or Landing page */
 .hero {
+  text-align: center;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -63,6 +69,7 @@ nav {
   animation: fadeIn 1s ease-in-out;
 }
 .hero-text {
+  border: solid;
   flex: 1 1 300px;
   text-align: center;
   padding: 1rem;
@@ -87,9 +94,10 @@ nav {
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
 #typewritter {
+  padding: 0px;
   overflow: hidden;
   white-space: nowrap;
-  font-size: 26px;
+  font-size: 20px;
   border-right: 3px solid black; /* Simulate cursor */
   width: 100%;
   animation: typing 2s steps(31, end) forwards, blink 0.5s infinite;
@@ -135,12 +143,13 @@ nav {
 .about-text,
 .about-image {
   opacity: 0;
-  transition: all 1s ease;
+  transition: all 1.5s ease;
 }
 .about-text {
   flex: 1 1 350px;
   padding: 1rem 2rem;
   transform: translateY(40px);
+  text-align: justify;
 }
 .about-image {
   flex: 1 1 300px;
@@ -244,7 +253,7 @@ nav {
   transform: translateY(0);
 }
 /* Responsive */
-@media (max-width: 600px) {
+@media (max-width: 700px) {
   nav {
     padding: 1rem;
   }
