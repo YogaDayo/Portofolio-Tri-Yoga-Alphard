@@ -15,7 +15,6 @@ body {
   padding: 0 20px;
 }
 nav {
-  border: solid black;
   top: 0;
   left: 0;
   right: 0;
@@ -69,7 +68,6 @@ nav {
   animation: fadeIn 1s ease-in-out;
 }
 .hero-text {
-  border: solid;
   flex: 1 1 300px;
   text-align: center;
   padding: 1rem;
