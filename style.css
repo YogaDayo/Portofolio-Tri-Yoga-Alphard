@@ -64,8 +64,8 @@ nav {
   align-items: center;
   justify-content: center;
   padding: 10rem 2rem;
-  background-color: #fff;
-  animation: fadeIn 1s ease-in-out;
+
+  /* animation: fadeIn 1s ease-in-out; */
 }
 .hero-text {
   flex: 1 1 300px;
@@ -92,10 +92,13 @@ nav {
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
 #typewritter {
+  text-align: center;
+  display: inline-block;
   padding: 0px;
   overflow: hidden;
   white-space: nowrap;
-  font-size: 20px;
+  font-size: 28px;
+  color: #333;
   border-right: 3px solid black; /* Simulate cursor */
   width: 100%;
   animation: typing 2s steps(31, end) forwards, blink 0.5s infinite;
@@ -106,7 +109,7 @@ nav {
     width: 0;
   }
   to {
-    width: 100%;
+    width: 28ch;
   }
 }
 @keyframes blink {
